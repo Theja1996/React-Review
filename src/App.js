@@ -1,29 +1,38 @@
-
-import './App.css';
+import "./App.css";
 //import Fun from './Components/FunctionalComponent';
 
 //On this arrow function fetch from without default export so {} using wrap function name
-import {Arrow} from './Components/FunctionalComponent'
-import Clz from './Components/ClassComponent'
-import Hello from './Components/Jxs'
-import Pro from './Components/PropsFunction'
-import Prop from './Components/PropsClass'
+import { Arrow } from "./Components/FunctionalComponent";
+import Clz from "./Components/ClassComponent";
+import Hello from "./Components/Jxs";
+import Pro from "./Components/PropsFunction";
+import Prop from "./Components/PropsClass";
+import St from "./Components/StateClass";
 function App() {
   return (
     <div className="App">
+      {/* functioanl component normal and arrow function called */}
       {/* <Fun />  */}
-     <Arrow />
-     <Clz />
-     <Hello />
-   <Pro name="wayan" hero="batman">
+      <Arrow />
 
-<p>crazy looking</p>
-   </Pro>
+      {/* class component class called */}
+      <Clz />
 
-   <Prop name="bunny" pet="bunty">
+      {/* jxs formate */}
+      <Hello />
 
-   <button>sent</button>
-   </Prop>
+      {/* Functional  component props */}
+      <Pro name="wayan" hero="batman">
+        <p>crazy looking</p>
+      </Pro>
+
+      {/* Class component props */}
+      <Prop name="bunny" pet="bunty">
+        <button>sent</button>
+      </Prop>
+
+      {/* class component state  */}
+      <St />
     </div>
   );
 }
