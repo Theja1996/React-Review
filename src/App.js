@@ -8,6 +8,7 @@ import Hello from "./Components/Jxs";
 import Pro from "./Components/PropsFunction";
 import Prop from "./Components/PropsClass";
 import St from "./Components/StateClass";
+import Set from './Components/SetStateClass'
 function App() {
   return (
     <div className="App">
@@ -33,6 +34,10 @@ function App() {
 
       {/* class component state  */}
       <St />
+
+<br></br>
+      {/* class component setState */}
+      <Set />
     </div>
   );
 }
