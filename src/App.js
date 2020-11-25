@@ -8,7 +8,9 @@ import Hello from "./Components/Jxs";
 import Pro from "./Components/PropsFunction";
 import Prop from "./Components/PropsClass";
 import St from "./Components/StateClass";
-import Set from './Components/SetStateClass'
+import Set from "./Components/SetStateClass";
+import Depro from "./Components/DestructuredPropsFunction";
+import Deprop from "./Components/DestructuredPropsClass"
 function App() {
   return (
     <div className="App">
@@ -35,9 +37,13 @@ function App() {
       {/* class component state  */}
       <St />
 
-<br></br>
+      <br></br>
       {/* class component setState */}
       <Set />
+
+      <Depro name="The LastShip" hero="nethon-jems "></Depro>
+
+      <Deprop name='BlackList' hero="Elisabeth"></Deprop>
     </div>
   );
 }
