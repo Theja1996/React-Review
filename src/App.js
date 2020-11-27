@@ -11,8 +11,9 @@ import St from "./Components/StateClass";
 import Set from "./Components/SetStateClass";
 import Depro from "./Components/DestructuredPropsFunction";
 import Deprop from "./Components/DestructuredPropsClass";
-import FunEvent from './Components/FunctionlEvent'
-import ClzEvent from './Components/ClassEvent'
+import FunEvent from "./Components/FunctionlEvent";
+import ClzEvent from "./Components/ClassEvent";
+import ClzEventBinding from './Components/ClassEventBinding'
 function App() {
   return (
     <div className="App">
@@ -40,7 +41,7 @@ function App() {
       <St />
 
       <br></br>
-      {/* class component setState */}
+      {/* class component setState data binding with arrow function */}
       <Set />
 
       {/* Functional  component props Destructuring */}
@@ -49,9 +50,14 @@ function App() {
       {/* Class component props Destructuring  */}
       <Deprop name="BlackList" hero="Elisabeth"></Deprop>
 
+      {/* Functional  component event handling*/}
       <FunEvent />
 
+      {/* Class component  event handling  */}
       <ClzEvent />
+
+      {/* Class component  event binding  without using arrow funcion */}
+      <ClzEventBinding />
     </div>
   );
 }
