@@ -10,7 +10,9 @@ import Prop from "./Components/PropsClass";
 import St from "./Components/StateClass";
 import Set from "./Components/SetStateClass";
 import Depro from "./Components/DestructuredPropsFunction";
-import Deprop from "./Components/DestructuredPropsClass"
+import Deprop from "./Components/DestructuredPropsClass";
+import FunEvent from './Components/FunctionlEvent'
+import ClzEvent from './Components/ClassEvent'
 function App() {
   return (
     <div className="App">
@@ -41,9 +43,15 @@ function App() {
       {/* class component setState */}
       <Set />
 
+      {/* Functional  component props Destructuring */}
       <Depro name="The LastShip" hero="nethon-jems "></Depro>
 
-      <Deprop name='BlackList' hero="Elisabeth"></Deprop>
+      {/* Class component props Destructuring  */}
+      <Deprop name="BlackList" hero="Elisabeth"></Deprop>
+
+      <FunEvent />
+
+      <ClzEvent />
     </div>
   );
 }
