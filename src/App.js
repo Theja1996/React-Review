@@ -13,7 +13,8 @@ import Depro from "./Components/DestructuredPropsFunction";
 import Deprop from "./Components/DestructuredPropsClass";
 import FunEvent from "./Components/FunctionlEvent";
 import ClzEvent from "./Components/ClassEvent";
-import ClzEventBinding from './Components/ClassEventBinding'
+import ClzEventBinding from "./Components/ClassEventBinding";
+import ParentComponent from "./Components/ParentComponent";
 function App() {
   return (
     <div className="App">
@@ -58,6 +59,9 @@ function App() {
 
       {/* Class component  event binding  without using arrow funcion */}
       <ClzEventBinding />
+
+      {/* methodes for props */}
+      <ParentComponent />
     </div>
   );
 }
