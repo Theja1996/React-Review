@@ -15,6 +15,7 @@ import FunEvent from "./Components/FunctionlEvent";
 import ClzEvent from "./Components/ClassEvent";
 import ClzEventBinding from "./Components/ClassEventBinding";
 import ParentComponent from "./Components/ParentComponent";
+import  ConditionalRendering  from './Components/ConditionalRendering'
 function App() {
   return (
     <div className="App">
@@ -59,9 +60,12 @@ function App() {
 
       {/* Class component  event binding  without using arrow funcion */}
       <ClzEventBinding />
-
+      <br></br>
       {/* methodes for props */}
       <ParentComponent />
+
+
+      < ConditionalRendering  />
     </div>
   );
 }
