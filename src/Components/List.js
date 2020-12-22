@@ -1,8 +1,8 @@
 import React from 'react'
 
 function List() {
- const names = ['toyota','kia','honda','alto']
-const nameList = names.map(name=><h1>{name}</h1>)
+ const names = ['toyota','kia','honda','alto','kia']
+const nameList = names.map((name,index)=><h1 key={index}>{index}{name}</h1>)
 
 const persons = [
     {
