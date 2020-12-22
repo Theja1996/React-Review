@@ -35,12 +35,14 @@ const persons = [
 ]
 
 
-const personList = persons.map(person=><p>I am {person.name} I am {person.age} years old ,I know {person.skill}</p>) 
+const personList = persons.map(person=><p key={person.id}>I am {person.name} I am {person.age} years old ,I know {person.skill}</p>) 
     return (
         <div>
 {nameList}
 
-{personList}
+{personList }
+
+
 {/* {names.map(name => <h1>{name}</h1>)} */}
 
 
