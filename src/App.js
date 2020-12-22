@@ -16,6 +16,7 @@ import ClzEvent from "./Components/ClassEvent";
 import ClzEventBinding from "./Components/ClassEventBinding";
 import ParentComponent from "./Components/ParentComponent";
 import  ConditionalRendering  from './Components/ConditionalRendering'
+import  List from './Components/List'
 function App() {
   return (
     <div className="App">
@@ -66,6 +67,8 @@ function App() {
 
 
       < ConditionalRendering  />
+
+      < List />
     </div>
   );
 }
