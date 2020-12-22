@@ -17,6 +17,10 @@ import ClzEventBinding from "./Components/ClassEventBinding";
 import ParentComponent from "./Components/ParentComponent";
 import  ConditionalRendering  from './Components/ConditionalRendering'
 import  List from './Components/List'
+import StyleSheet from './Components/StyleSheet'
+import InlineStyle from './Components/InlineStyle'
+import styles from "./Components/appStyles.module.css";
+import './Components/appStyles.css'
 function App() {
   return (
     <div className="App">
@@ -69,6 +73,14 @@ function App() {
       < ConditionalRendering  />
 
       < List />
+
+      <StyleSheet primary='true' />
+
+      <InlineStyle />
+
+      <h1 className='error'>error</h1>
+
+      <h1 className={styles.sucssess}>Sucssess</h1>
     </div>
   );
 }
