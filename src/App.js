@@ -21,6 +21,10 @@ import StyleSheet from './Components/StyleSheet'
 import InlineStyle from './Components/InlineStyle'
 import styles from "./Components/appStyles.module.css";
 import './Components/appStyles.css'
+import HooksCounter from "./Hooks/useStateHook";
+import HooksCountMore from "./Hooks/useStatePreviousHook";
+import UseStateObjectHook from './Hooks/useStateObjectHook'
+import UseStateArrayHook from './Hooks/useStateArrayHook'
 function App() {
   return (
     <div className="App">
@@ -78,9 +82,19 @@ function App() {
 
       <InlineStyle />
 
+   
+
       <h1 className='error'>error</h1>
 
       <h1 className={styles.sucssess}>Sucssess</h1>
+
+
+      <HooksCounter />
+      <HooksCountMore />
+
+     < UseStateObjectHook />
+
+     < UseStateArrayHook />
     </div>
   );
 }
