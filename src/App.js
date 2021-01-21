@@ -25,6 +25,8 @@ import HooksCounter from "./Hooks/useStateHook";
 import HooksCountMore from "./Hooks/useStatePreviousHook";
 import UseStateObjectHook from './Hooks/useStateObjectHook'
 import UseStateArrayHook from './Hooks/useStateArrayHook'
+import  UseEffectHook from './Hooks/useEffectHook'
+import RunEffectOnlyOne from './Hooks/RunEffectOnlyOne'
 function App() {
   return (
     <div className="App">
@@ -95,6 +97,10 @@ function App() {
      < UseStateObjectHook />
 
      < UseStateArrayHook />
+     < UseEffectHook />
+
+     <RunEffectOnlyOne />
+     
     </div>
   );
 }
